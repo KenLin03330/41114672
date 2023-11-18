@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MIS相關工作介紹</title>
+
+	<style type="text/css">
+		* { 
+			font-family: "標楷體"; }
+
+		header { 
+			font-size: 36px;
+			color: yellow; }
+
+		.col-lg-4 {
+			border: 1px solid; }
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script>
+		$(document).ready(function(){
+			$("#COMPANY").hover(function(){
+				$("#PICTURE").attr("src","/static/logo.png");
+			});
+
+			$("#PICTURE").click(function(){
+				$("#PICTURE").hide();
+				$("#PICTURE").fadeIn("slow")
+			});
+		});
+	</script>
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-warning navbar-light">
+	<a class="navbar-brand" href="#">選單</a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="#COMPANY">公司資訊</a></li>
+			<li class="nav-item"><a class="nav-link" href="#worker">職務介紹</a></li>
+			<li class="nav-item"><a class="nav-link" href="#need">工作條件需求</a></li>
+		</ul>
+	</div>
+	</nav>
+
+	<main class="container-fluid bg-dark text-white text-center">
+
+		<nav>
+			<h1><a href="https://www.twincn.com/item.aspx?no=53129265" class="text-reset text-decoration-none text-white bg-success" target="_blank" id="COMPANY">創造力互動媒體有限公司 </a></h1>
+		</nav>
+
+		<img src="/static/IMG_6362" alt="照片" width="300" class="img-fluid rounded-circle" id="PICTURE"> 
+		<br><br><br>
+
+		<div class="row">
+			<session id="COMPANY" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-white">公司資訊</header>
+				<h3>公司名：創造力互動媒體有限公司<br>
+				地址：台中市西屯區文心路三段241號10號樓之7<br>
+				服務/商品：</h3>
+				<h4>【網頁設計】</h4>
+				<h4>【客製化網頁】</h4>
+				<h3>公司介紹：</h3>
+				<h4>協助不同的產業進行網頁設計還有規劃 <br>
+					為企業帶來更高的市場競爭力</h4>
+			</session>
+
+			<article id="worker" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-white">職務介紹</header> 
+				<h3>MIS程式設計師、<br>
+					軟體設計工程師、<br>
+					Internet程式設計師<br></h3>
+			</article>
+			
+			<aside id="need" class="col-lg-4">
+				<header><a class="text-reset text-decoration-none bg-white">
+				工作條件需求</a></header>
+				<h3>接受身份：</h3><h4>上班族、應屆畢業生</h4>
+				<h3>工作經歷：</h3><h4>2年以上</h4>
+				<h3>學歷要求：</h3><h4>專科以上</h4>
+				<h3>科系要求：</h3><h4>不拘</h4>
+				<h3>語文條件：</h3><h4>不拘</h4>
+				<h3>擅長工具：</h3><h4>Linux、C#、Java、PL/SQL、TCP/IP</h4>
+			</aside>
+		</div><br><br>
+		
+		<footer>
+			Copyright ©  林浚承. All Rights Reserved.
+		</footer>
+		
+	</main>
+</body>
+</html>
